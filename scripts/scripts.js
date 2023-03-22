@@ -21,6 +21,10 @@ greet (fname, "evening, ")
 // console.log (`hello ${dog}`)
 // }
 
+const RadiusPara = document.querySelector("#radius")
+const ResultPara = document.querySelector("#result")
+
+
 function CircleArea(radius){
     if (isNaN(radius)) {
         alert("not a number!");
@@ -33,4 +37,3 @@ function CircleArea(radius){
 
 let RadiusInput = prompt(`enter radius of circle`)
 CircleArea(RadiusInput)
-
