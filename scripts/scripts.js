@@ -23,7 +23,7 @@ greet (fname, "evening, ")
 
 function CircleArea(radius){
     if (isNaN(radius)) {
-        alert("not a number, try again");
+        alert("not a number!");
     return;
     }
     const area = Math.PI * radius ** 2;
