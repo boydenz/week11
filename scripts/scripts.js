@@ -20,3 +20,17 @@ greet (fname, "evening, ")
 // {
 // console.log (`hello ${dog}`)
 // }
+
+function CircleArea(radius){
+    if (isNaN(radius)) {
+        alert("not a number, try again");
+    return;
+    }
+    const area = Math.PI * radius ** 2;
+    alert(`the area of the circle with radius ${radius} is ${area.toFixed(2)}`);
+    return area;
+}
+
+let RadiusInput = prompt(`enter radius of circle`)
+CircleArea(RadiusInput)
+
