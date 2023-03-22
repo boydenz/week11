@@ -25,14 +25,19 @@ const RadiusPara = document.querySelector("#radius")
 const ResultPara = document.querySelector("#result")
 
 
-function CircleArea(radius){
+function CircleArea(){
+    const radiusInput = document.getElementById('radius');
+    const resultOutput = document.getElementById('result');
+    
     if (isNaN(radius)) {
-        alert("not a number!");
-    return;
+        resultOutput.textContent = 'Error: invalid input';
+    }
+    else{
+        const area = Math.PI * radius ** 2;
+        resultOutput.textContent = `The area is ${area.toFixed(2)}`;
     }
     const area = Math.PI * radius ** 2;
-    alert(`the area of the circle with radius ${radius} is ${area.toFixed(2)}`);
-    return area;
+    resultOutput.textContent = `the area of the circle with radius ${radius} is ${area.toFixed(2)}`;
 }
 
 let RadiusInput = prompt(`enter radius of circle`)
